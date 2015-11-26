@@ -1,0 +1,518 @@
+/*@import url("../fonts/NarrowBold/stylesheet.css");
+@import url("../fonts/NarrowRegular/stylesheet.css");*/
+
+@font-face{
+	font-family: "Narrow"; /* Имя шрифта */
+    src: url("../fonts/Narrow.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face{
+	font-family: "GeorgiaI"; /* Имя шрифта */
+    src: url("../fonts/georgia.ttf"); /* Путь к файлу со шрифтом */
+}
+
+
+body{
+	background: #000 url("../img/bgBody.jpg") top center no-repeat;
+	font-family: "Narrow", sans-serif;
+	font-size:14px;
+	font-weight:700;
+	text-transform: uppercase;
+}
+
+.otherBody{
+	background: #fff url("../img/bgBlock.png");
+	color:#000;
+}
+
+
+/* footer bottom */
+
+html, body{
+	height:100%;
+}
+
+
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+}
+
+	.wrapper:after{
+		content:" ";
+		display: block;
+		height:189px;
+	}
+
+.footer{
+	height:189px;
+	margin: -189px 0 0;
+	zoom:1;
+}
+
+/* end footer bottom*/
+
+
+.layoutCenterWrapper{
+	width:940px;
+	margin:0 auto;
+	position: relative;
+}
+
+/* clearfix */
+
+.clearfix:after, .container:after{
+	clear:both;
+}
+
+.clearfix:after, .clearfix:before, .container:after, .container:before{
+	content: "";
+	display:table;
+} 
+
+/* end clearfix */
+
+fieldset{
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+
+/* loginPopUp*/ 
+.loginPopUp{
+	position: fixed;
+	left:50%;
+	top:20%;
+	background: url("../img/bgBlock.png");
+	padding:57px 80px 65px 80px;
+	z-index: 10;
+	width:300px;
+	margin: 0 0 0 -230px;
+	zoom:1;
+	display: none;
+	}
+
+		.loginPopUpClose{
+			position: absolute;
+			top:55px;
+			right:-45px;			
+			width:21px;
+			height:21px;
+			background: url("../img/loginPopUpClose.png") -5px -5px no-repeat;
+		}
+			.loginPopUpClose:hover{
+				background: url("../img/loginPopUpClose.png") -5px -36px no-repeat;
+			}
+
+			.loginPopUpCloseLink{
+				display:block;
+				height:100%;
+				width:100%;
+			}
+
+				.loginPopUpCloseText{
+					position: absolute;
+					left:-9999px;
+				}
+
+		.loginPopUpHead{
+			margin: 0 0 33px 0;
+			padding: 0;
+			font-size:30px;
+			text-transform: uppercase;
+			line-height: 0.5;
+		}
+
+		.loginPopUpText{
+			text-transform: uppercase;
+			line-height: 1.5;
+			margin:0 0 31px 0;
+		}
+
+
+			.loginPopUpForm fieldset{
+				border:none;
+				margin:0;
+				padding: 0;
+			}
+
+			.loginPopUpLogin, .loginPopUpPass{
+				border:2px solid #000;
+				padding: 11px 15px;
+				margin:0 0 11px 0;
+				width:89%;
+			}
+/* style for checkbox */
+		
+		/* Cначала обозначаем стили для IE8 и более старых версий
+			т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+			.loginPopUpCheckbox {
+			  vertical-align: top;
+			  margin: 0 3px 0 0;
+			  width: 20px;
+			  height: 20px;
+			}
+			/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+			селекторы с плюсом. Показываем, что label кликабелен. */
+			.loginPopUpCheckbox + label {
+			  cursor: pointer;
+			}
+
+			/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+			Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+			в них все нижеследующие стили не сработают. */
+
+			/* Прячем оригинальный чекбокс. */
+			.loginPopUpCheckbox:not(checked) {
+			  position: absolute;
+			  opacity: 0;
+			}
+			.loginPopUpCheckbox:not(checked) + label {
+			  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+			  padding: 0 0 0 30px; /* оставляем слева от label место под псевдочекбокс */
+			}
+			/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+			.loginPopUpCheckbox:not(checked) + label:before {
+			  content: '';
+			  position: absolute;
+			  top: -4px;
+			  left: 0;
+			  width: 18px;
+			  height: 18px;
+			  border:2px solid #000;
+			}
+			
+			/* Меняем фон чекбокса, когда он включен. */
+			.loginPopUpCheckbox:checked + label:before {
+			  background: url("../img/bgCheckbox.png") 3px 3px no-repeat;
+			}
+			
+/* end style for checkbox */
+
+
+			.loginPopUpSubmit{
+				display: block;
+				background: #000;
+				color:#fff;
+				text-align:center;
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: 12px 0;
+				width:100%;
+				border:none;
+			}
+
+				.loginPopUpSubmit:hover{
+					background: #fff;
+					color:#000;
+				}
+			
+			
+			.loginPopUpLogin::-webkit-input-placeholder, 
+			.loginPopUpPass::-webkit-input-placeholder{
+				text-transform: uppercase;
+				color:#000;
+			}
+
+			.loginPopUpLogin:moz-placeholder, 
+			.loginPopUpPass:moz-placeholder{
+				text-transform: uppercase;
+				color:#000;
+			}
+
+			.loginPopUpLogin::moz-placeholder, 
+			.loginPopUpPass::moz-placeholder{
+				text-transform: uppercase;
+				color:#000;
+			}
+
+			.loginPopUpLogin::-ms-input-placeholder, 
+			.loginPopUpPass::-ms-input-placeholder{
+				text-transform: uppercase;
+				color:#000;
+			}
+
+			.loginPopUpLogin{
+				background: #fff url("../img/bgPopUp.png") 227px -26px no-repeat;
+			}
+
+			.loginPopUpPass{
+				background: #fff url("../img/bgPopUp.png") 227px -130px no-repeat;
+			}
+
+	.loginPopUpCheckboxText{
+		text-transform: uppercase;
+	}
+
+	.loginPopUpLinkBlock{
+		position: absolute;
+		top:289px;
+		right:80px;
+	}
+		.loginPopUpLink{
+			text-transform: uppercase;
+			color:#000;
+			/*border-bottom: 1px solid #000;*/
+		}
+	.loginPopUpWrapperCheckBox{
+		display: block;
+		margin:0 0 19px 0;
+	}
+
+/* end loginPopUp*/ 
+
+/* header */
+.header{
+	max-width:1200px;
+	min-width:940px;
+	margin:0 auto 57px;
+	width:100%;
+	height:72px;
+	background: #000;
+	position: relative;
+}
+
+	.topMenuWrapper{
+		position: absolute;
+		top:0;
+		left:0;
+		max-width:780px;
+	}
+		.topMenu{
+			margin:0;
+			padding:0;
+			list-style: none;
+		}
+			.topMenuElem{
+				float:left;
+				height:72px;
+			}
+				.topMenuLink{
+					display: block;
+					padding:27px 20px;
+					color:#fff;
+					text-decoration:none;
+					text-transform: uppercase;
+				}
+
+				.topMenuLink:hover{
+					background: #242424;
+				}
+					.topMenuLinkActive{
+						box-shadow: 0 25px 0 -20px #fff;
+					}
+	.accountWrapper{
+		position: absolute;
+		top:0;
+		right:0;
+		max-width:140px;
+		
+	}
+		
+		.accountLink{
+			background: url("../img/bgAccount.png") -49px -22px no-repeat;
+		}
+
+		.accountLink:hover{
+			background:#242424 url("../img/bgAccount.png") -49px -137px no-repeat;
+		}
+
+		.accountLink{
+			display: block;
+			padding:27px 20px 29px 32px;
+			color:#fff;
+			text-decoration:none;
+			text-transform: uppercase;
+		}
+
+/* end header */		
+
+/*
+footer
+*/
+
+.footer{
+	background: url("../img/bgFooter.jpg") repeat-x;
+	zoom:1;
+}
+
+	.dateFooter,.socFooter,.footerDesign{
+		position: absolute;
+		top:58px;
+		width: 313px;
+	}
+
+		.headerFooterBlock,.dateFooterContent{
+			text-transform: uppercase;
+			color:#fff;
+			line-height: 1.5;
+			font-size:14px;
+			margin:0;
+			padding:0;
+		}
+
+		.headerFooterBlock{
+			text-align: center;
+			margin:0 0 3px 0;
+		}
+
+		.dateFooter{
+			left:0;
+		}
+
+		.socFooter{
+			left:50%;
+			text-align: center;
+			margin:0 0 0 -157px;
+
+		}
+
+			.footerSocList{
+				margin:3px auto 0;
+				width:149px;
+				padding: 0;
+				list-style: none;
+				text-align: center;
+			}
+				.footerSocItemVk, .footerSocItemFb, .footerSocItemIg{
+					float:left;
+					position: relative;
+					width:43px;
+					height:43px;
+					margin:0 6px 0 0;
+				}
+
+					.footerSocItemVk{
+						background: #000 url("../img/bgSoc.png") -43px -525px no-repeat;
+					}
+						.footerSocItemVk:hover{
+							background: #fff url("../img/bgSoc.png") -43px -641px no-repeat;
+						}
+
+					.footerSocItemFb{
+						background: #000 url("../img/bgSoc.png") -36px -40px no-repeat;
+					}
+						.footerSocItemFb:hover{
+							background: #fff url("../img/bgSoc.png") -36px -163px no-repeat;
+						}
+
+					.footerSocItemIg{
+						background: #000 url("../img/bgSoc.png") -39px -285px no-repeat;
+					}
+
+						.footerSocItemIg:hover{
+							background: #fff url("../img/bgSoc.png") -39px -406px no-repeat;
+						}
+
+
+					.footerSocLink{
+						display: block;
+						text-decoration: none;
+					}
+
+						.footerSocLinkText{
+							position: absolute;
+							left:-9999px;
+						}
+		.footerDesign{
+			right:0;
+			width:140px;
+		}	
+
+
+			.designLink{
+				display: block;
+				background: #000;
+				color:#fff;
+				text-align:center;
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: 12px 0;
+				width:100%;
+				border:none;
+			}
+				.designLink:hover{
+					background: #fff;
+					color:#000;
+				}
+
+/*breadcrumbs*/
+
+.breadcrumbs{
+	display: block;
+	margin:0 0 0 3px;
+	padding: 1px 0 0;
+	list-style: none;
+	zoom:1;
+	min-height: 20px;
+}
+	.breadcrumbsItem{
+		position: relative;
+		float: left;
+		margin:0 41px 0 0;
+		}
+		.breadcrumbsItem:after{
+			position: absolute;
+			content:"";
+			width:9px;
+			height:9px;
+			top:5px;
+			right:-26px;
+			background: #000;
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+
+			.breadcrumbsItem:last-child:after{
+				display: none;
+			}
+
+			.breadcrumbsLink{
+				display: block;
+				text-decoration: none;
+				color:#000;
+				text-transform: uppercase;
+			}
+
+	/*end breadcrumbs*/
+
+/* blockProductPrice */
+
+.blockProductPrice{
+	min-height:43px;
+	margin: 0 0 0 0;
+}
+
+	.blockPriceText{
+		float: left;
+		padding: 13px 26px 14px 29px;
+		background: #e5e5e5;
+	}
+
+	.buttonProductBuy{
+		float: left;
+		
+		background: #000;
+	}
+
+		.buttonProductBuyLink{
+			display: block;
+			padding: 13px 17px 14px 20px;
+			color:#fff;
+			text-decoration: none;
+		}
+
+/* end blockProductPrice */
+
+/* .headerInnerPage*/
+
+.headerInnerPage{
+	font-size:30px;
+	line-height: 1;
+}

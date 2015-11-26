@@ -1,0 +1,105 @@
+.priceHeadBlock{
+	text-align: center;
+	margin:51px 0 61px 0;
+}
+	.priceHead{
+			position:relative;
+			display:inline;
+			font-size:48px;
+			line-height:1;
+			padding:0 25px;
+			margin:0;
+			background: url("../img/bgBlock.png");
+			z-index:2;
+		}
+		.priceHeadBlock:after{
+			position:relative;
+			top:-24px;
+			border-bottom:2px solid #000;
+			content:"";
+			display:block;
+			z-index:1;
+		}
+
+.containerPrice{
+	margin:0 0 43px 0;
+}
+	
+	.containerPriceLieft{
+		float:left;
+		width:460px;
+	}
+
+		.resourcesList{
+			margin:-5px 0 0;
+			padding:0;
+			list-style: none;
+		}
+			.resourcesItem{
+				position: relative;
+				padding: 0 0 0 21px;
+				margin:0 0 19px 0;
+			}
+
+			.resourcesItem:after{
+			position: absolute;
+			content:"";
+			width:9px;
+			height:9px;
+			top:5px;
+			left:0;
+			background: #000;
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+
+	.containerPriceRight{
+		padding: 0 0 0 480px;
+	}
+		
+		.priceServeces{
+			width:100%;
+			margin:0;
+			padding: 0;
+		}
+
+		.priceServeces td{
+			width:50%;
+			border:2px solid #000;
+			padding: 10px 16px;
+		}
+			.priceServeces td:nth-child(2n+2){
+				text-align: center;
+			}
+
+	.containerPriceHead{
+		margin:0 0 40px 0;
+		padding: 0;
+		font-weight: bold;
+	}
+
+.descriptionPrice{
+	margin:0 0 40px 0;
+	zoom:1;
+}
+
+	.descriptionWeHead{
+		margin:0 0 33px 0;
+	}
+
+	.descriptionPriceLeft{
+		float:left;
+		width:460px;
+	}
+
+	.descriptionPriceRight{
+		padding: 0 0 0 480px;
+	}
+
+		.descriptionPriceLeft p, .descriptionPriceRight p{
+			margin:0 0 15px 0;
+			line-height:1.5;
+		}

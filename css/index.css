@@ -1,0 +1,226 @@
+/* logo */
+	.logo{
+		text-align:center;
+		padding: 0 0 0 11px;
+	}
+/*end logo */
+
+/*features*/
+	.features{
+		margin:0 0 68px 0;
+		padding:0;
+		list-style: none;
+	}
+		.feature{
+			float:left;
+			width:33%;
+			color:#fff;
+			text-transform: uppercase;
+			position: relative;
+		}
+			.headerFeature{
+				font-size:30px;
+				text-align: center;
+				/*padding: 0 0 0 32px;*/
+				margin: 19px 0 75px 0;
+				}
+
+				.headerFeature:after{
+					content:"";
+					display:inline-block;
+					position: absolute;
+					left:148px;
+					top:76px;
+					width:20px;
+					height: 20px;
+					background: #fff;
+					-webkit-transform: rotate(45deg);
+					-moz-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					-o-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+
+			.featureText{
+				font-size:14px;
+				line-height: 1.5;
+				text-align: center;
+			}
+/*end features*/
+
+/*whiteBlock*/
+
+	.whiteBlock{
+		background: url("../img/bgBlock.png");
+		padding: 55px 80px 55px 80px;
+		margin:0 0 34px 0;
+		zoom:1; /* for ie7 for visible float elements*/
+	}
+
+		.leftBlock{
+			float:left;
+			width:380px;
+			padding: 0 10px 0 0;
+			background: url("../img/bgLeftBlock.png") right center no-repeat;
+		}
+
+		.rightBlock{
+			float:right;
+			padding:0 0 0 90px;
+			width:299px;
+		}
+		
+		.whiteBlockHeader{
+			font-size:30px;
+			text-transform: uppercase;
+			line-height: 0.8;
+			margin:0 0 35px 0;
+		}
+
+
+
+/*end whiteBlock*/
+
+	.newsListMain{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+		.newsListItem{
+			text-transform: uppercase;
+			line-height: 1.5;
+			margin:0 0 26px 0;
+		}
+
+		.newsListItemText{
+			margin:0 0 5px 0;
+		}
+
+		.newsListDate{
+			font-family: "GeorgiaI", sans-serif;
+			font-style: italic;
+			text-transform: lowercase;
+			font-weight: 400;
+		}
+			
+			.wrapperButton{
+				float:left;
+				min-width: 140px;
+			}
+				.buttonMain{
+					display: block;
+					background: #000;
+					color:#fff;
+					text-align:center;
+					text-transform: uppercase;
+					text-decoration: none;
+					padding: 12px 0;
+				}
+					.buttonMain:hover{
+						background: #fff;
+						color:#000;
+					}
+
+		.photoGalleryList{
+			margin:0 0 40px 0;
+			padding: 11px 0 0 7px;
+			list-style: none;
+
+		}
+
+	.marginLeftButton{
+		margin: 0 19px 0 0;
+	}
+	
+	.blockContactMain{
+		margin: 0 0 51px 0;
+	}
+
+		.blockContactMainText{
+			text-transform: uppercase;
+			line-height: 1.6;
+			margin:0 0 29px 0;
+		}
+
+		.formWrite fieldset{
+			border:none;
+			margin:0;
+			padding:0;
+		}
+
+			.comentFormWrite{
+				text-transform: uppercase;
+				line-height:1.6;
+				margin: 0 0 28px 0;
+			}
+	
+
+	.inputInformation{
+		margin:0 0 14px 0;
+	}
+
+	.dateWrite::-webkit-input-placeholder, 
+	.timeWrite::-webkit-input-placeholder, 
+	.nameWrite::-webkit-input-placeholder, 
+	.phoneWrite::-webkit-input-placeholder{
+		text-transform: uppercase;
+		color:#000;
+	}
+
+
+	.dateWrite:moz-placeholder, 
+	.timeWrite:moz-placeholder, 
+	.nameWrite:moz-placeholder, 
+	.phoneWrite:moz-placeholder{
+		text-transform: uppercase;
+		color:#000;
+	}
+
+	.dateWrite::moz-placeholder, 
+	.timeWrite::moz-placeholder, 
+	.nameWrite::moz-placeholder, 
+	.phoneWrite::moz-placeholder{
+		text-transform: uppercase;
+		color:#000;
+	}
+
+	.dateWrite::-ms-input-placeholder, 
+	.timeWrite::-ms-input-placeholder, 
+	.nameWrite::-ms-input-placeholder, 
+	.phoneWrite::-ms-input-placeholder{
+		text-transform: uppercase;
+		color:#000;
+	}
+
+	.dateWrite, 
+	.timeWrite, 
+	.nameWrite, 
+	.phoneWrite{
+		border:2px solid #000;
+		padding: 11px 15px;
+		margin:0 0 19px 0;
+		width:102px;
+	}
+
+	.dateWrite, 
+	.nameWrite{
+		margin: 0 20px 19px 0;
+	}
+
+	.writeSubmitButton{
+		display: block;
+		background: #000;
+		color:#fff;
+		text-align:center;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 12px 0;
+		width:100%;
+		border:none;
+	}
+
+		.writeSubmitButton:hover{
+			background: #fff;
+			color:#000;
+
+		}

@@ -1,0 +1,234 @@
+
+
+.contenainerInnerPage{
+	margin:35px 0 0;
+	zoom:1;
+}
+
+/* sidebarSearchProduct */
+.sidebarSearchProduct{
+	float:left;
+	width:220px;
+	padding:20px 0 0 0;
+}
+
+	.produsersSearchHeader, .groupProductsHead{
+		font-size:24px;
+		line-height:1;
+		margin: 0 0 30px 0;
+	}
+
+	.produsersSearchHeader{
+		
+	}
+
+.produsersSearchForm{
+	margin:0 0 30px 0;
+}
+
+
+.produsersSearchWrapperCheckBox{
+	margin:0 0 20px 0;
+}
+/* style for checkbox */
+	
+	/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+	.produsersSearchCheckBox {
+	  vertical-align: top;
+	  margin: 0 3px 0 0;
+	  width: 18px;
+	  height: 18px;
+	}
+
+	/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+	селекторы с плюсом. Показываем, что label кликабелен. */
+	.produsersSearchCheckBox + label {
+	  cursor: pointer;
+	}
+
+	/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+	Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+	в них все нижеследующие стили не сработают. */
+
+	/* Прячем оригинальный чекбокс. */
+	.produsersSearchCheckBox:not(checked) {
+	  position: absolute;
+	  opacity: 0;
+	}
+	.produsersSearchCheckBox:not(checked) + label {
+	  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+	  padding: 0 0 0 44px; /* оставляем слева от label место под псевдочекбокс */
+	}
+
+	/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+	.produsersSearchCheckBox:not(checked) + label:before {
+	   content: '';
+		position: absolute;
+		top: 0px;
+		left: 0;
+		width: 16px;
+		height: 16px;
+		border:2px solid #000;
+	}
+
+	/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+	.produsersSearchCheckBox:not(checked) + label:after {
+	 	background: url("../img/bgCheckbox.png") 2px 2px no-repeat;
+	}
+	
+	/* Меняем фон чекбокса, когда он включен. */
+	.produsersSearchCheckBox:checked + label:before {
+		background: url("../img/bgCheckbox.png") 2px 2px no-repeat;
+	}
+	/* Сдвигаем переключатель чекбокса, когда он включен. */
+	.produsersSearchCheckBox:checked + label:after {
+	  
+	}
+	/* Показываем получение фокуса. */
+	.produsersSearchCheckBox:focus + label:before {
+	  
+	}
+
+/* end style for checkbox */
+	
+.groupProductsWrapperCheckBox{
+	margin:0 0 20px 0;
+	padding: 0 0 0 44px;
+}
+
+/* style for radio */
+
+	/* Cначала обозначаем стили для IE8 и более старых версий
+	т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+	.groupProductsRadio {
+	  vertical-align: top;
+	  margin: 0 3px 0 0;
+	  width: 18px;
+	  height: 18px;
+	}
+
+	/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+	селекторы с плюсом. Показываем, что label кликабелен. */
+	.groupProductsRadio + label {
+	  cursor: pointer;
+	}
+
+	/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+	Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+	в них все нижеследующие стили не сработают. */
+
+	/* Прячем оригинальный чекбокс. */
+	.groupProductsRadio:not(checked) {
+	  position: absolute;
+	  opacity: 0;
+	}
+	.groupProductsRadio:not(checked) + label {
+	  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+		/* оставляем слева от label место под псевдочекбокс */
+	}
+
+	/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+	.groupProductsRadio:not(checked) + label:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -44px;
+		width: 16px;
+		height: 16px;
+		border:2px solid #000;
+		border-radius:50%;
+	}
+
+	/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+	.groupProductsRadio:not(checked) + label:after {
+	 	
+	}
+	
+	/* Меняем фон чекбокса, когда он включен. */
+	.groupProductsRadio:checked + label:before {
+		background: url("../img/bgRadioChecked.png") 4px 4px no-repeat;
+	 }
+	/* Сдвигаем переключатель чекбокса, когда он включен. */
+	.groupProductsRadio:checked + label:after {
+	  
+	}
+	/* Показываем получение фокуса. */
+	.groupProductsRadio:focus + label:before {
+	  
+	}
+
+/* end style for radio */
+
+/*end sidebarSearchProduct */
+
+/* productsBlock */
+.productsBlock{
+	padding:0 0 0 221px;
+}
+
+	.productsList{
+		margin: 0;
+		padding: 24px 0 0 19px;
+		list-style: none;
+	}
+	
+		.productsItem{
+			float:left;
+			margin:0 19px 20px 0;
+			background: #fff;
+			box-shadow: 0 0 15px rgba(0,0,0,0.2);
+		}
+			.productsItem:nth-child(3n+3){
+				margin:0 0 20px 0;
+			}
+
+			.productsItemContent{
+				padding: 0 15px 15px 15px;
+			}
+			
+			.productsItemHeader{
+				font-size:14px;
+				margin:8px 0 0 0;
+			}
+			.productsItemDescription{
+				text-transform: none;
+				margin:0 0 12px 0;
+			}
+
+	.paginationList{
+		margin: 0 0 47px 20px;
+		min-height: 34px;
+		padding: 0;
+		list-style: none;
+	}
+		.paginationItem{
+			float:left;
+			width: 43px;
+			height:43px;
+			background: #000;
+			margin: 0 8px 0 0;
+		}
+
+			.paginationItem:hover{
+				background: #fff
+			}
+			.paginationLink{
+				display: block;
+				color:#fff;
+				text-decoration: none;
+				padding: 13px;
+				text-align: center;
+			}
+				.paginationLink:hover{
+					color:#000;
+				}
+
+			.paginationItemAction{
+				background: #fff;
+			}
+				.paginationItemAction .paginationLink{
+					color:#000;
+				}
+
+/* end productsBlock */

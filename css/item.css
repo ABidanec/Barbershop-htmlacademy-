@@ -1,0 +1,121 @@
+
+
+.contentMarket{
+	zoom:1;
+}
+
+	/*contentMarketleft*/
+	.contentMarketleft{
+		float:left;
+		width:480px;
+		margin: 0 0 78px 0;
+
+	}
+
+		.bigImgProductGallery img{
+			width:460px;
+			box-shadow: 0 0 15px rgba(0,0,0,0.2);
+		}
+
+		.littleImgGallery{
+			margin: 17px 0 0;
+			padding: 0;
+			list-style: none;
+		}
+
+			.littleImgGalleryItem{
+				float: left;
+				width:140px;
+				padding: 0 0 0 20px;
+			}
+
+				.littleImgGalleryItem:first-child{
+					padding: 0;
+				}
+
+				.littleImgGalleryItem img{
+					box-shadow: 0 0 15px rgba(0,0,0,0.2);
+				}
+
+/*contentMarketRight*/
+
+.contentMarketRight{
+	float:right;
+	width:390px;
+}
+
+.headerGroup{
+	font-weight: 700;
+}
+
+	.headerGroup1{
+		font-size:30px;
+		line-height: 0.7;
+		text-transform: uppercase;
+		margin: 0 0 30px 0;
+	}
+
+	.headerProup2{
+		font-size:24px;
+		line-height: 0.7;
+		text-transform: uppercase;
+		margin: 0 0 40px 0;
+	}
+
+	
+	.priceBlock{
+		margin:0 0 33px 0;
+	}
+
+	.blockTechicalInfo{
+		min-height: 20px;
+		margin:0 0 27px 0;
+	}
+
+		.inStock{
+			float: left;
+		}
+
+		.articulProduct{
+			float:right;
+			color: #aeaeae;
+		}
+	
+	.descriptionProduct{
+		margin: 0 0 58px 0;
+	}
+
+	.descriptionProduct p{
+		line-height: 1.6;
+	}
+
+	.setProductHeader{
+		font-weight: 700;
+		margin:0 0 31px 0;
+	}
+
+	.setProductList{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+		.setProductItem{
+			position: relative;
+			padding: 0 0 0 20px;
+			margin: 0 0 6px 0;
+		}
+
+			.setProductItem:after{
+				position: absolute;
+				content:"";
+				width:9px;
+				height:9px;
+				top:5px;
+				left:0px;
+				background: #000;
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
